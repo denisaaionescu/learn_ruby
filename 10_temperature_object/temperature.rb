@@ -18,6 +18,7 @@ class Temperature
   def in_fahrenheit
     @celsius * C_TO_F_FACTOR + FREEZING_POINT_F
   end
+  
   def self.from_celsius(c)
     new(c: c)
   end
