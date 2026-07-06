@@ -1,9 +1,12 @@
+FREEZING_POINT_F = 32
+CELSIUS_TO_FAHRENHEIT_SCALE = 9.0 / 5.0
+
 def ftoc(f)
-    (f-32) * 5.0/9.0
+    (f - FREEZING_POINT_F) * (1 / CELSIUS_TO_FAHRENHEIT_SCALE)
 end
 
 def ctof(c)
-    c* 9.0/5.0 +32
+    c * CELSIUS_TO_FAHRENHEIT_SCALE + FREEZING_POINT_F
 end
 
 
