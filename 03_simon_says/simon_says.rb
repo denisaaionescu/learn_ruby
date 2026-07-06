@@ -13,7 +13,7 @@ def start_of_word(word, n)
 end
 def first_word(words)
    word=words.split
-   return word[0]
+   word.first
 end
 def titleize(word)
     non_title_words = ["and", "the", "over"]
